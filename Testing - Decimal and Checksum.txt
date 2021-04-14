@@ -1,0 +1,76 @@
+http://10.20.2.23:9093/swiftcore/faces/services/Generic/generate1PayChecksum?param1=043200100016323&param2=25.06210903&param3=25.06162932
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<otherChannelServiceResponse>
+    <accountNo> </accountNo>
+    <amount>0.0</amount>
+    <benefName> </benefName>
+    <custNo> </custNo>
+    <emailId> </emailId>
+    <errorCode>0</errorCode>
+    <errorMessage>Successful Query.</errorMessage>
+    <message>EDCAABAAABGDHDBCDHDIDF</message>
+    <mmid> </mmid>
+    <mobileNo> </mobileNo>
+    <name> </name>
+    <response>SUCCESS</response>
+    <status> </status>
+    <transactionId>0</transactionId>
+    <valid>false</valid>
+    <warnMessage> </warnMessage>
+</otherChannelServiceResponse>
+
+======================================================================
+
+http://10.20.2.23:9093/swiftcore/faces/services/NETC/ONE_FOR_ALL_SERVICES
+
+REQUEST -
+
+<onePayProcessPaymentRequest>
+<ACCOUNT_NUMBER>043200100016323</ACCOUNT_NUMBER>
+<OPERATION>DEBIT</OPERATION>
+<PLAZA_ID>540013</PLAZA_ID>
+<PLAZA_NAME>Mulund(LBS)</PLAZA_NAME>
+<VEHICLE_REG_NUMBER>MH46AU5017</VEHICLE_REG_NUMBER>
+<REQUEST_REASON>TRANSACTION</REQUEST_REASON>
+<DISPUTE_NUMBER>12345678</DISPUTE_NUMBER>
+<TOLL_TXN_ID>0802781720585549915329</TOLL_TXN_ID>
+<ACQ_TXN_ID>2886318725363491</ACQ_TXN_ID>
+<TAGID>34161FA82033E6EC02001340</TAGID>
+<TXN_AMOUNT>25.05</TXN_AMOUNT>
+<CURRENCY>INR</CURRENCY>
+<PAYMENT_TYPE>OFFLINE</PAYMENT_TYPE>
+<REVERSAL_ALLOWED>FALSE</REVERSAL_ALLOWED>
+<PAYMENT_LIABILITY>ISSUER</PAYMENT_LIABILITY>
+<STATUS>1</STATUS>
+<ISSUE_DATE>09/03/2021</ISSUE_DATE>
+<ENTRY_DATE>09/03/2021</ENTRY_DATE>
+<ENTRY_TIME>16:29:31</ENTRY_TIME>
+<CHECKSUM>EDCAABAAABGDHDBCDHDIDF</CHECKSUM>
+<VEHICLE_CLASS>VC4</VEHICLE_CLASS>
+<COMMERCIAL_VEHICLE>TRUE</COMMERCIAL_VEHICLE>
+<TAG_THRESHOLD_AMOUNT>1500</TAG_THRESHOLD_AMOUNT>
+<COMMAND>PROCESS_PAYMENT</COMMAND>
+<TAG_ISSUANCE_CHG>200</TAG_ISSUANCE_CHG>
+<SECURITY_DEPOSIT>100</SECURITY_DEPOSIT>
+<RRNNO>186859878795</RRNNO>
+</onePayProcessPaymentRequest>
+
+===== 
+
+RESPONSE--
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<onePayProcessPaymentResponse>
+    <ADD_IN_LB_EXCEPTION>N</ADD_IN_LB_EXCEPTION>
+    <APPROVAL_NUMBER></APPROVAL_NUMBER>
+    <AVAILABLE_BALANCE>38002.95</AVAILABLE_BALANCE>
+    <custNo>4075168</custNo>
+    <errorCode>0</errorCode>
+    <errorMessage>Successful Query.</errorMessage>
+    <LEDGER_BALANCE>38002.95</LEDGER_BALANCE>
+    <lbrCode>43</lbrCode>
+    <RRNNO>186859878795</RRNNO>
+    <refNo>43/04032021/NETC1/1002212/1004072</refNo>
+    <response>SUCCESS</response>
+</onePayProcessPaymentResponse>
